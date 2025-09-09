@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio de Ciclo While</title>
+</head>
+<body>
+    <h1>Ejercicio 1: Suma de números</h1>
+    <p>Abre la consola (F12) para ver la suma final de los números que ingreses.</p>
+
+    <script>
+        // Esta es la variable para guardar la suma, empieza en 0.
+        let suma = 0;
+
+        // Le pedimos el primer número al usuario con la ventanita 'prompt'.
+        let numero = parseInt(prompt("Ingresa un número (ingresa un número negativo para terminar):"));
+
+        // El ciclo se repite mientras el número no sea negativo.
+        while (numero >= 0) {
+            // Sumamos el número actual a la suma total.
+            suma = suma + numero;
+
+            // Le pedimos otro número. Esta parte es clave para que el ciclo siga.
+            numero = parseInt(prompt("Ingresa otro número:"));
+        }
+
+        // Cuando el ciclo termina, mostramos el resultado en la consola.
+        console.log("La suma de todos los números ingresados es: " + suma);
+    </script>
+</body>
+</html>
