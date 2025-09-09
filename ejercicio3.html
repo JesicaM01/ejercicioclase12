@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3: Ciclo For</title>
+</head>
+<body>
+    <h1>Ejercicio 3: Números Impares</h1>
+    <p>Ingresa un número y el programa contará cuántos números impares hay desde 0 hasta ese número.</p>
+
+    <script>
+        let numeroX = parseInt(prompt("Ingresa un número para contar los impares:"));
+        
+        let contadorImpares = 0;
+
+        for (let i = 0; i <= numeroX; i++) {
+            if (i % 2 !== 0) {
+                contadorImpares++;
+            }
+        }
+        
+        console.log("La cantidad de números impares desde 0 hasta " + numeroX + " (inclusive) es: " + contadorImpares);
+    </script>
+</body>
+</html>
