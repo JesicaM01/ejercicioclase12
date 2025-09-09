@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4: Notas de Estudiantes</title>
+</head>
+<body>
+    <h1>Ejercicio 4: Registro de Notas</h1>
+    <p>Ingresa varias notas y luego revisa la consola para ver el array completo.</p>
+    
+    <script>
+        let notas = [];
+        let numeroDeNotas = 3;
+
+        for (let i = 0; i < numeroDeNotas; i++) {
+            let nota = parseInt(prompt("Ingresa la nota del estudiante " + (i + 1) + ":"));
+            notas[i] = nota;
+        }
+
+        console.log("Las notas ingresadas son:", notas);
+    </script>
+</body>
+</html>
