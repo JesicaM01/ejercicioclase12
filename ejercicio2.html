@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2: Contraseña</title>
+</head>
+<body>
+    <h1>Ejercicio 2: Contraseña</h1>
+    <p>Ingresa la contraseña para acceder. ¡La contraseña correcta es "1234"!</p>
+
+    <script>
+        let contrasena;
+        
+        do {
+            contrasena = prompt("Ingresa la contraseña:");
+            
+            if (contrasena !== "1234") {
+                alert("Contraseña incorrecta. Inténtalo de nuevo.");
+            }
+        } while (contrasena !== "1234");
+        
+        alert("¡Contraseña correcta! Acceso concedido.");
+    </script>
+</body>
+</html>
