@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5: Array y Condicionales</title>
+</head>
+<body>
+    <h1>Ejercicio 5: Buscar un Nombre</h1>
+    <p>Ingresa 5 nombres y luego busca uno en la lista.</p>
+    
+    <script>
+        const nombres = [];
+        const cantidadDeNombres = 5;
+
+        for (let i = 0; i < cantidadDeNombres; i++) {
+            let nombre = prompt("Ingresa el nombre #" + (i + 1) + ":");
+            nombres.push(nombre);
+        }
+
+        const nombreBuscado = prompt("Ingresa el nombre que quieres buscar:");
+        
+        if (nombres.includes(nombreBuscado)) {
+            alert(¡El nombre "${nombreBuscado}" se encuentra en la lista!);
+        } else {
+            alert(El nombre "${nombreBuscado}" NO se encuentra en la lista.);
+        }
+
+        console.log("La lista completa de nombres es:", nombres);
+    </script>
+</body>
+</html>
